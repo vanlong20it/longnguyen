@@ -1,5 +1,5 @@
 import React from "react";
-import BgHero from "@/assets/images/bg-hero.jpg";
+import BgHero from "@/assets/images/bg-hero.webp";
 import TypingText from "@/components/TypingText";
 import Button from "@/components/Base/Button";
 const HeroSection = () => {

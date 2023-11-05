@@ -6,14 +6,14 @@ import classNames from "@/utils/classNames";
 import ImageModal from "./ImageModal";
 
 const IMAGES_DATA = [
-  { src: "/images/portfolio-1.jpg", type: "design" },
-  { src: "/images/portfolio-2.jpg", type: "brand" },
-  { src: "/images/portfolio-3.jpg", type: "design" },
-  { src: "/images/portfolio-4.jpg", type: "brand" },
-  { src: "/images/portfolio-5.jpg", type: "design" },
-  { src: "/images/portfolio-6.jpg", type: "photo" },
-  { src: "/images/portfolio-7.jpg", type: "design" },
-  { src: "/images/portfolio-8.jpg", type: "brand" },
+  { src: "/images/portfolio-1.webp", type: "design" },
+  { src: "/images/portfolio-2.webp", type: "brand" },
+  { src: "/images/portfolio-3.webp", type: "design" },
+  { src: "/images/portfolio-4.webp", type: "brand" },
+  { src: "/images/portfolio-5.webp", type: "design" },
+  { src: "/images/portfolio-6.webp", type: "photo" },
+  { src: "/images/portfolio-7.webp", type: "design" },
+  { src: "/images/portfolio-8.webp", type: "brand" },
 ];
 
 const PortfolioSection = () => {

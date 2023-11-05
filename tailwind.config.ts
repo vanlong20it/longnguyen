@@ -23,7 +23,7 @@ const config: Config = {
         padding: "1rem",
       },
       backgroundImage: {
-        hero: "url('/images/bg-hero.jpg')",
+        hero: "url('/images/bg-hero.webp')",
       },
     },
   },
