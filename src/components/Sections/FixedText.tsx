@@ -8,10 +8,10 @@ interface Props {
 const FixedText: FC<Props> = ({ title, backgroundTitle }) => {
   return (
     <div className="relative text-center">
-      <div className="relative text-9xl text-gray-300/10 select-none">
+      <div className="relative select-none text-5xl text-gray-300/10 lg:text-9xl">
         {backgroundTitle}
       </div>
-      <div className="absolute left-1/2 text-5xl top-1/2 text-white -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl text-white lg:text-5xl">
         {title}
       </div>
     </div>

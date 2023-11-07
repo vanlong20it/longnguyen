@@ -12,7 +12,7 @@ const ServicesSection = () => {
     <section id="services-section" className="relative bg-gray-600 py-20">
       <FixedText backgroundTitle="Services" title="What I Do?" />
       <div className="container relative text-white">
-        <div className="grid grid-cols-2 grid-rows-3 gap-4">
+        <div className="grid lg:grid-cols-2 grid-rows-3 gap-4">
           <div className="col-span-1 row-span-1 flex gap-4">
             <div className="inline-flex h-16 w-16 items-center justify-center rounded bg-black text-3xl text-primary">
               <AiOutlineAntDesign />

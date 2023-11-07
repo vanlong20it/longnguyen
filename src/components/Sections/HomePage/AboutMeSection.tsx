@@ -9,7 +9,7 @@ const AboutMeSection = () => {
       <FixedText title="Know me more" backgroundTitle="About me" />
       <div className="container relative">
         <div className="mx-auto mt-2 h-1.5 w-20 bg-white"></div>
-        <div className="mt-10 grid grid-cols-3 gap-5">
+        <div className="mt-10 grid gap-5 lg:grid-cols-3">
           <div className="col-span-2">
             <h4 className="text-3xl font-semibold">
               I&apos;m <span className="text-primary">Nguyen Long,</span> a Web
@@ -50,7 +50,7 @@ const AboutMeSection = () => {
             <Button accent="primary">Download CV</Button>
           </div>
         </div>
-        <div className="mt-10 grid grid-cols-4 divide-x divide-gray-500 text-gray-500">
+        <div className="mt-10 grid lg:divide-x divide-gray-500 text-gray-500 md:grid-cols-2 lg:grid-cols-4">
           <div className="col-span-1 p-10 text-center">
             <p className="text-5xl font-bold tracking-widest">3+</p>
             <p className="mt-2">Years Experience</p>

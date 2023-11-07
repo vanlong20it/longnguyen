@@ -29,8 +29,8 @@ const TypingText: FC<Props> = ({ text, duration }) => {
   }, [tempText, textIndex]);
 
   return (
-    <span>
-      {tempText}
+    <span className="">
+      <span className="">{tempText}</span>
       <span className="animate-pulse duration-200">|</span>
     </span>
   );

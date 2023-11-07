@@ -47,11 +47,16 @@ const FeedbackSlide = () => {
     <div>
       <Swiper
         style={{ paddingBottom: "40px" }}
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={16}
         loop
         pagination
         modules={[Navigation, Pagination]}
+        breakpoints={{
+          992: {
+            slidesPerView: 2,
+          },
+        }}
       >
         {FEEDBACKS.map((item, index) => {
           return (

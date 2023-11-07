@@ -77,7 +77,7 @@ const PortfolioSection = () => {
             Photos
           </button>
         </div>
-        <div className="relative columns-3 break-inside-avoid gap-5">
+        <div className="relative columns-1 break-inside-avoid gap-5 md:columns-2 lg:columns-3">
           {data.map((imageItem, index) => {
             return (
               <div

@@ -1,21 +1,21 @@
-import React from "react";
-import BgHero from "@/assets/images/bg-hero.webp";
-import TypingText from "@/components/TypingText";
 import Button from "@/components/Base/Button";
+import TypingText from "@/components/TypingText";
 const HeroSection = () => {
   return (
     <section
-      className="relative flex h-screen items-center justify-center bg-gray-400 bg-hero bg-cover bg-fixed bg-center bg-no-repeat before:absolute before:left-0 before:right-0 before:h-full before:w-full before:bg-black/40"
+      className="relative flex h-screen w-full items-center justify-center bg-gray-400 bg-hero bg-cover bg-fixed bg-center bg-no-repeat before:absolute before:left-0 before:right-0 before:h-full before:w-full before:bg-black/40"
       id="hero-section"
     >
-      <div className="relative text-center text-white">
+      <div className="relative w-full p-4 text-center text-white">
         <p className="text-2xl">Welcome</p>
-        <h1 className="mt-2 h-12 text-5xl font-bold">
+        <h1 className="mt-2 min-h-[3rem] text-3xl font-bold lg:text-5xl">
           <TypingText text="I'm Long, a front-end developer" duration={200} />
         </h1>
-        <h2 className="mt-4 text-2xl">Based in Thu Duc City, HCM City</h2>
+        <h2 className="mt-4 text-xl lg:text-2xl">
+          Based in Thu Duc City, HCM City
+        </h2>
         <div className="mt-5">
-          <Button htmlType="button" className="text-2xl">
+          <Button htmlType="button" className="text-lg lg:text-2xl">
             Hire me
           </Button>
         </div>

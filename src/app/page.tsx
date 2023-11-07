@@ -1,3 +1,4 @@
+import ContactSection from "@/components/Sections/HomePage/ContactSection";
 import dynamic from "next/dynamic";
 
 const HeroSection = dynamic(
@@ -28,6 +29,7 @@ export default function Home() {
       <SummarySection />
       <PortfolioSection />
       <TestimonialSection />
+      <ContactSection />
     </>
   );
 }

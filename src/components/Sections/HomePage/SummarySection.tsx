@@ -8,7 +8,7 @@ const SummarySection = () => {
     <section id="summary-section" className="relative bg-gray-700 py-20">
       <FixedText backgroundTitle="Summary" title="Resume" />
       <div className="container relative text-white">
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid lg:grid-cols-2 gap-10">
           <div className="col-span-1">
             <h4 className="text-2xl font-bold">My Education</h4>
             <div className="mt-5 rounded bg-black p-5">
@@ -62,7 +62,7 @@ const SummarySection = () => {
         </div>
         <div className="mt-10">
           <h3 className="text-2xl font-bold">My Skills</h3>
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid lg:grid-cols-2 gap-10">
             <div className="col-span-1">
               <div className="mt-6">
                 <p className="mb-2 text-lg">Web design</p>
