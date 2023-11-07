@@ -32,7 +32,7 @@ const PortfolioSection = () => {
   };
 
   return (
-    <div className="relative bg-gray-800 py-20" id="portfolio-section">
+    <div className="relative bg-gray-800 py-10 lg:py-20" id="portfolio-section">
       <FixedText backgroundTitle="Portfolio" title="My Work" />
       <div className="container relative text-white">
         <div className="mb-5 flex items-center justify-center gap-2">
@@ -77,7 +77,7 @@ const PortfolioSection = () => {
             Photos
           </button>
         </div>
-        <div className="relative columns-1 break-inside-avoid gap-5 md:columns-2 lg:columns-3">
+        <div className="relative columns-1 break-inside-avoid gap-5 lg:columns-3">
           {data.map((imageItem, index) => {
             return (
               <div

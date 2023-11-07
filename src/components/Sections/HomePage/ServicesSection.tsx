@@ -9,10 +9,13 @@ import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { FaPenNib, FaPenRuler } from "react-icons/fa6";
 const ServicesSection = () => {
   return (
-    <section id="services-section" className="relative bg-gray-600 py-20">
+    <section
+      id="services-section"
+      className="relative bg-gray-600 py-10 lg:py-20"
+    >
       <FixedText backgroundTitle="Services" title="What I Do?" />
-      <div className="container relative text-white">
-        <div className="grid lg:grid-cols-2 grid-rows-3 gap-4">
+      <div className="container relative mt-5 text-white lg:mt-0">
+        <div className="grid grid-rows-3 gap-4 lg:grid-cols-2">
           <div className="col-span-1 row-span-1 flex gap-4">
             <div className="inline-flex h-16 w-16 items-center justify-center rounded bg-black text-3xl text-primary">
               <AiOutlineAntDesign />

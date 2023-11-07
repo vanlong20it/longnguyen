@@ -5,10 +5,10 @@ import Button from "@/components/Base/Button";
 
 const SummarySection = () => {
   return (
-    <section id="summary-section" className="relative bg-gray-700 py-20">
+    <section id="summary-section" className="relative bg-gray-700 py-10 lg:py-20">
       <FixedText backgroundTitle="Summary" title="Resume" />
       <div className="container relative text-white">
-        <div className="grid lg:grid-cols-2 gap-10">
+        <div className="grid gap-10 lg:grid-cols-2">
           <div className="col-span-1">
             <h4 className="text-2xl font-bold">My Education</h4>
             <div className="mt-5 rounded bg-black p-5">

@@ -3,9 +3,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer id="footer" className="bg-gray-600 py-20 text-white">
+    <footer id="footer" className="bg-gray-600 py-10 text-white lg:py-20">
       <div className="container">
-        <div className="flex items-center justify-between">
+        <div className="items-center justify-between lg:flex">
           <p>Copyright &copy; 2023 Simone. All Rights Reserved.</p>
           <ul className="flex items-center gap-4">
             <li>
