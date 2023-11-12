@@ -7,7 +7,7 @@ const AboutMeSection = () => {
   return (
     <section
       id="about-me"
-      className="relative bg-gray-700 py-10 text-white lg:py-20"
+      className="bg-stone-700 relative py-10 text-white lg:py-20"
     >
       <FixedText title="Know me more" backgroundTitle="About me" />
       <div className="container relative">
@@ -37,7 +37,7 @@ const AboutMeSection = () => {
                 <span className="font-semibold">Email: </span>
                 <Link
                   href="mailto:vanlong20it@gmail.com"
-                  className="text-primary"
+                  className="underline transition-all hover:text-primary"
                 >
                   vanlong20it@gmail.com
                 </Link>

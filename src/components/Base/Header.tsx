@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { FaEnvelope, FaFacebook, FaLinkedin } from "react-icons/fa6";
 import { useEventListener, useOnClickOutside } from "usehooks-ts";
+import UserProfile from "../Auth/UserProfile";
 
 const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
@@ -28,8 +29,8 @@ const Header = () => {
       ref={headerRef}
       id="header"
       className={classNames(
-        "fixed left-0 top-0 z-10 w-full text-white transition-all",
-        isFixed ? "bg-black" : "h-14 bg-black lg:h-auto lg:bg-transparent",
+        "fixed left-0 top-0 z-10 w-full text-white transition-all bg-black",
+        isFixed ? "" : "h-14 lg:h-auto",
       )}
     >
       <div className="container relative">
@@ -50,7 +51,7 @@ const Header = () => {
             </button>
             <ul
               className={classNames(
-                "fixed left-0 top-14 block w-full items-center bg-black transition-all duration-500 lg:static lg:flex lg:bg-transparent",
+                "fixed left-0 top-14 block w-full items-center transition-all duration-500 lg:static lg:flex lg:bg-transparent",
                 isOpen ? "translate-x-0" : "translate-x-full lg:-translate-x-0",
               )}
             >
@@ -104,32 +105,7 @@ const Header = () => {
             </ul>
           </nav>
           <div className="hidden lg:block">
-            <ul className="flex items-center gap-4">
-              <li>
-                <Link
-                  href="#social"
-                  className="text-xl transition-all hover:text-primary"
-                >
-                  <FaFacebook />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#social"
-                  className="text-xl transition-all hover:text-primary"
-                >
-                  <FaLinkedin />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#social"
-                  className="text-xl transition-all hover:text-primary"
-                >
-                  <FaEnvelope />
-                </Link>
-              </li>
-            </ul>
+            <UserProfile />
           </div>
         </div>
       </div>

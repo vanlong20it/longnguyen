@@ -1,4 +1,5 @@
 import ContactSection from "@/components/Sections/HomePage/ContactSection";
+import IconScrollSlider from "@/components/Sections/IconScrollSlider";
 import dynamic from "next/dynamic";
 
 const HeroSection = dynamic(
@@ -24,6 +25,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <IconScrollSlider />
       <AboutMeSection />
       <ServicesSection />
       <SummarySection />

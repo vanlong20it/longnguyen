@@ -19,9 +19,9 @@ const Button: FC<ButtonType> = ({ children, accent = "primary", ...props }) => {
       className={classNames(
         props.className ?? "",
         "inline-flex min-h-[2.5rem] items-center justify-center rounded px-6 py-2.5 transition-all",
-        accent === "primary" ? "bg-primary text-white hover:shadow-xl hover:scale-105" : "",
-        accent === "secondary" ? "bg-secondary text-white hover:shadow-xl hover:scale-105" : "",
-        accent === "accent" ? "bg-accent hover:shadow-xl hover:scale-105" : "",
+        accent === "primary" ? "bg-primary text-black hover:shadow-lg" : "",
+        accent === "secondary" ? "bg-secondary text-white hover:shadow-lg" : "",
+        accent === "accent" ? "bg-accent hover:shadow-lg" : "",
       )}
     >
       {children}

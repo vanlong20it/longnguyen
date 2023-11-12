@@ -15,7 +15,7 @@ const HeroSection = () => {
           Based in Thu Duc City, HCM City
         </h2>
         <div className="mt-4 lg:mt-5">
-          <Button htmlType="button" className="text-base lg:text-2xl">
+          <Button htmlType="button">
             Hire me
           </Button>
         </div>

@@ -5,13 +5,13 @@ import Button from "@/components/Base/Button";
 
 const SummarySection = () => {
   return (
-    <section id="summary-section" className="relative bg-gray-700 py-10 lg:py-20">
+    <section id="summary-section" className="relative bg-gray-900 py-10 lg:py-20">
       <FixedText backgroundTitle="Summary" title="Resume" />
       <div className="container relative text-white">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="col-span-1">
             <h4 className="text-2xl font-bold">My Education</h4>
-            <div className="mt-5 rounded bg-black p-5">
+            <div className="mt-5 rounded bg-jungle-700 p-5">
               <span className="inline-block rounded bg-primary px-2 py-1.5 text-sm text-white">
                 2018 - 2021
               </span>
@@ -25,7 +25,7 @@ const SummarySection = () => {
           </div>
           <div className="col-span-1">
             <h4 className="text-2xl font-bold">My Experience</h4>
-            <div className="mt-5 rounded bg-black p-5">
+            <div className="mt-5 rounded bg-jungle-700 p-5">
               <span className="inline-block rounded bg-primary px-2 py-1.5 text-sm text-white">
                 07/2020 - 11/2020
               </span>
@@ -36,7 +36,7 @@ const SummarySection = () => {
                 vim, ad mea essent possim iriure.
               </p>
             </div>
-            <div className="mt-5 rounded bg-black p-5">
+            <div className="mt-5 rounded bg-jungle-700 p-5">
               <span className="inline-block rounded bg-primary px-2 py-1.5 text-sm text-white">
                 05/2021 - 12/2021
               </span>
@@ -47,7 +47,7 @@ const SummarySection = () => {
                 vim, ad mea essent possim iriure.
               </p>
             </div>
-            <div className="mt-5 rounded bg-black p-5">
+            <div className="mt-5 rounded bg-jungle-700 p-5">
               <span className="inline-block rounded bg-primary px-2 py-1.5 text-sm text-white">
                 12/2021 - Now
               </span>

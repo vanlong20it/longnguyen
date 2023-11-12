@@ -1,6 +1,8 @@
 "use client";
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 import Checkbox from "./Checkbox";
+
+type DesignType = "beautiful" | "cheap" | "fast";
 
 const CheckBoxContainer = () => {
   const [data, setData] = useState({
@@ -11,62 +13,77 @@ const CheckBoxContainer = () => {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, checked } = e.target;
-    setData(updateData(name, checked));
-  };
+    const result = { ...data, [name]: checked };
 
-  const updateData = (name: string, checked: boolean) => {
-    const result = data;
-    if (checked) {
-      if (name === "beautiful") {
+    if (name === "beautiful") {
+      // Beautiful
+      if (result.cheap) {
+        result.fast = false;
+      } else if (result.fast) {
         result.cheap = false;
       }
-      if (name === "cheap") {
+    } else if (name === "cheap") {
+      // Cheap
+      if (result.beautiful) {
         result.fast = false;
-      }
-      if (name === "fast") {
+      } else if (result.fast) {
         result.beautiful = false;
       }
-      result[name as "beautiful" | "cheap" | "fast"] = true;
-    } else {
-      result[name as "beautiful" | "cheap" | "fast"] = false;
+    } else if (name === "fast") {
+      // Fast
+      if (result.beautiful) {
+        result.cheap = false;
+      } else if (result.cheap) {
+        result.beautiful = false;
+      }
     }
-    return result;
+    console.log(name, checked, result);
+    setData(result);
   };
 
   return (
     <div>
       <div className="mb-4 flex items-center gap-4 last:mb-0">
-        <label htmlFor="beautiful" className="flex-1 select-none">
+        <label htmlFor="beautiful" className="flex-1 select-none text-3xl">
           Đẹp
         </label>
-        <Checkbox
-          id="beautiful"
-          checked={data.beautiful}
-          onChange={handleChange}
-          name="beautiful"
-        />
+        <div className="relative">
+          <Checkbox
+            className="peer/checkbox hidden h-0 w-0"
+            id="beautiful"
+            checked={data.beautiful}
+            onChange={handleChange}
+            name="beautiful"
+          />
+        </div>
       </div>
       <div className="mb-4 flex items-center gap-4 last:mb-0">
-        <label htmlFor="fast" className="flex-1 select-none">
+        <label htmlFor="fast" className="flex-1 select-none text-3xl">
           Nhanh
         </label>
-        <Checkbox
-          id="fast"
-          checked={data.fast}
-          onChange={handleChange}
-          name="fast"
-        />
+        <div className="relative">
+          <Checkbox
+            className="peer/checkbox hidden h-0 w-0"
+            id="fast"
+            checked={data.fast}
+            onChange={handleChange}
+            name="fast"
+          />
+        </div>
       </div>
       <div className="mb-4 flex items-center gap-4 last:mb-0">
-        <label htmlFor="cheap" className="flex-1 select-none">
+        <label htmlFor="cheap" className="flex-1 select-none text-3xl">
           Rẻ
         </label>
-        <Checkbox
-          id="cheap"
-          checked={data.cheap}
-          onChange={handleChange}
-          name="cheap"
-        />
+        <div className="relative">
+          <Checkbox
+            className="peer/checkbox hidden h-0 w-0"
+            id="cheap"
+            checked={data.cheap}
+            onChange={handleChange}
+            name="cheap"
+          />
+        </div>
       </div>
     </div>
   );

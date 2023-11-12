@@ -12,18 +12,37 @@ const config: Config = {
       md: "992px",
       lg: "1280px",
     },
+    fontFamily: {
+      heading: "Be Vietnam Pro",
+      body: "Be Vietnam Pro",
+    },
     extend: {
+      animation: {
+        "loop-scroll": "loop-scroll 50s  linear infinite",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0%)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
       colors: {
-        primary: "#53cf26",
-        secondary: "#06221b",
-        accent: "#146c28",
+        primary: {
+          DEFAULT: "#D9CCC1",
+        },
+        secondary: {
+          DEFAULT: "#595551",
+        },
+        accent: {
+          DEFAULT: "#8C847D",
+        },
       },
       container: {
         center: true,
         padding: "1rem",
       },
       backgroundImage: {
-        hero: "url('/images/bg-hero.webp')",
+        hero: "url('/images/bg-hero.jpg')",
       },
     },
   },
